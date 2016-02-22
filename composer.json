@@ -1,0 +1,29 @@
+{
+  "name": "alekc/crisp-thinking",
+  "description": "Support library for integration of Crisp Thinking",
+  "type": "library",
+  "keywords": ["crisp"],
+  "homepage": "https://github.com/alekc/crisp-thinking",
+  "authors": [
+    {
+      "name": "Alexander Chernov",
+      "email": "alekcander@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/alekc/crisp-thinking/issues",
+    "source": "https://github.com/alekc/crisp-thinking"
+  },
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+
+  },
+  "suggest": {
+
+  },
+  "autoload": {
+    "psr-4": {"Alekc\\CrispThinking\\": "src/"}
+  }
+}
