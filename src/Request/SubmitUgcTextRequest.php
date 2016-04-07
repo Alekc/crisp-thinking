@@ -26,13 +26,7 @@ class SubmitUgcTextRequest extends GenericRequest
 
     public function send()
     {
-        $params  = $this->prepareParams();
-        $options = Crisp::getOptions();
-        $url     = $options->getCrispEndPoint() . static::CALL_PATH;
-
-        $httpResponse = \Httpful\Request::post($url)
-                                        ->body(json_encode($params))
-                                        ->send();
+        $httpResponse = parent::send();
 
         $response = new SubmitUgcTextResponse($httpResponse);
         return $response;

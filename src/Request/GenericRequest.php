@@ -6,7 +6,7 @@ use Alekc\CrispThinking\Crisp;
 use Alekc\CrispThinking\Options;
 use Alekc\CrispThinking\Request\Traits\ApiKeyTrait;
 
-class GenericRequest
+abstract class GenericRequest
 {
     use ApiKeyTrait;
 
@@ -34,8 +34,18 @@ class GenericRequest
 
     public function send()
     {
+        $params  = $this->prepareParams();
+        $options = Crisp::getOptions();
+        $url     = $options->getCrispEndPoint() . static::CALL_PATH;
 
+        $httpResponse = \Httpful\Request::post($url)
+                                        ->body(json_encode($params))
+                                        ->send();
+
+        return $httpResponse;
     }
+
+    abstract protected function prepareParams();
 
     protected function addDefaultParamValues($key, &$params)
     {
