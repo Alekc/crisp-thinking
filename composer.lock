@@ -1,0 +1,75 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7a301ba2ade5020e261bcffc8eb23079",
+    "content-hash": "df2896140bff2723acc854888a05e36d",
+    "packages": [
+        {
+            "name": "nategood/httpful",
+            "version": "dev-stable",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Alekc/httpful.git",
+                "reference": "8fab9b84045a992e7b8be88918b49a8c73b4a15f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Alekc/httpful/zipball/8fab9b84045a992e7b8be88918b49a8c73b4a15f",
+                "reference": "8fab9b84045a992e7b8be88918b49a8c73b4a15f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Httpful": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nate Good",
+                    "email": "me@nategood.com",
+                    "homepage": "http://nategood.com"
+                }
+            ],
+            "description": "A Readable, Chainable, REST friendly, PHP HTTP Client",
+            "homepage": "http://github.com/nategood/httpful",
+            "keywords": [
+                "api",
+                "curl",
+                "http",
+                "requests",
+                "rest",
+                "restful"
+            ],
+            "support": {
+                "source": "https://github.com/Alekc/httpful/tree/dev-stable"
+            },
+            "time": "2016-02-07 11:27:06"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "nategood/httpful": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": []
+}

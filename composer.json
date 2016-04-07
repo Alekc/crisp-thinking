@@ -15,7 +15,8 @@
     "source": "https://github.com/alekc/crisp-thinking"
   },
   "require": {
-    "php": ">=5.4"
+    "php": ">=5.4",
+    "nategood/httpful": "dev-stable"
   },
   "require-dev": {
 
@@ -23,6 +24,12 @@
   "suggest": {
 
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/alekc/httpful"
+    }
+  ],
   "autoload": {
     "psr-4": {"Alekc\\CrispThinking\\": "src/"}
   }
