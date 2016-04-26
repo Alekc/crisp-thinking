@@ -18,7 +18,7 @@ class SubmitUgcTextResponse extends GenericResponse
         if ($this->responseCode != 200) return;
 
         //see if it's filtered
-        $this->filtered     = $this->originalData->Result == 2;
+        $this->filtered     = $this->originalData->Result == 2 || $this->originalData->Result == 1;
         $this->filteredText = $this->originalData->FilteredText;
     }
 
