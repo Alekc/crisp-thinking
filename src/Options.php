@@ -4,7 +4,7 @@ namespace Alekc\CrispThinking;
 class Options
 {
     const CRISP_LIVE_END_POINT    = "http://stage1.dc1.rmf.crispthinking.com";
-    const CRISP_STAGING_END_POINT = "http://live1.dc1.rmf.crispthinking.com";
+    const CRISP_STAGING_END_POINT = "http://api.rmf.crispthinking.com";
 
 
     /**
